@@ -1,24 +1,23 @@
 import React from 'react';
 import UsersTable from '../containers/users-list';
-import { Route } from 'react-router';
-import { withRouter } from 'react-router';
+import { Route,Switch,withRouter } from 'react-router-dom';
 
 
-const Info = ({match,params}) => {
+const Info = ({match}) => {
+  const {id} = match.params;
   return (
     <div>
-      { `item ${match.params.id}`}
+      {`Hello ${id}`}
     </div>
   )
 }
-const InfoRout = withRouter(Info)
+const InfoItem = withRouter(Info)
 
 const TableWrap = ({match,params}) =>{
-  const link = `${match.path}/:id`
   return (
     <div className="table-wrap" >
-      <Route to={match.path} component={UsersTable} />
-      <Route exact to="/users/:id" component={InfoRout}>
+      <Route path="/users" exact component={UsersTable} />
+      <Route path="/users/:id" component={Info} />
     </div>
   )
 }
