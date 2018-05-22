@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-import { Route, Link } from "react-router-dom";
-import TableWrap from './table-wrap';
+import { Route } from "react-router-dom";
+import TableWrap from '../components/table-wrap';
 import Sidebar from './sidebar';
-
-const Home = () => (
-  <div>Home</div>
-)
+import Header from "../containers/header-cont";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route exact path="/" component={Sidebar} />
+        <Header />
         <Route path="/users" component={TableWrap} />
       </div>
     );

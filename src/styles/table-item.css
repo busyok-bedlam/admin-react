@@ -2,8 +2,18 @@
   display: grid;
   grid-template-columns: 1fr 6fr 6fr 1fr 1fr 1fr 6fr 1fr;
   border: 1px solid #000;
-
+  padding: 20px;
+  grid-gap: 10px;
 }
 .table-row:hover {
   cursor: pointer;
+  box-shadow: 0 0 10px #000;
+}
+.table-row > div {
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: #B5FB81;
+}
+.table-row > div:hover {
+  box-shadow: 0 0 10px #000;
 }

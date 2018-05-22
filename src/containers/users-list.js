@@ -4,7 +4,8 @@ import { getUsers } from '../actions/users';
 import { selectUsers } from '../selectors'
 
 const mapStateToProps = state => ({
-  users: selectUsers(state)
+  users: selectUsers(state),
+  formStatus: state.isFormOpen
 })
 const mapDispatchToProps = dispatch => ({
   getUsers: () => dispatch(getUsers())
