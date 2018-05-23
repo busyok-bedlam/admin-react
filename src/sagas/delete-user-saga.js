@@ -12,7 +12,7 @@ function * delUserWatcher(){
   yield takeEvery(deleteUserAction,delUserWorker);
 }
 function * delUserWorker({payload: id}){
-  yield delay(2000);
+  yield call(delay(2000));
   yield call(deleteUser(id));
   yield put(deleteUserAction(id));
 }

@@ -1,8 +1,12 @@
 .Header {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 1fr 1fr 6fr;
+  grid-template-rows: 100px;
   background-color: #8193FB;
-  padding: 20px;
   color: #fff;
-
+}
+.header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

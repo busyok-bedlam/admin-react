@@ -19,15 +19,6 @@
       "status": "complicated"
     },
     {
-      "id": 4,
-      "firstName": "fight",
-      "lastName": "quince",
-      "age": 15,
-      "visits": 31,
-      "progress": 50,
-      "status": "single"
-    },
-    {
       "id": 5,
       "firstName": "creator",
       "lastName": "surprise",
