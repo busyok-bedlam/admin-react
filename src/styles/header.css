@@ -13,3 +13,7 @@
 .users-btn:hover {
   cursor: pointer;
 }
+.select-filter {
+  border: 0px;
+  padding: 20px 0;
+}

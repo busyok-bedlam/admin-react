@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from "react-router-dom";
 import TableWrap from '../components/table-wrap';
-import Sidebar from './sidebar';
 import Header from "../containers/header-cont";
 
 class App extends Component {

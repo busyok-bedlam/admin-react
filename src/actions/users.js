@@ -5,3 +5,4 @@ export const setUsers = createAction("setUsers");
 export const setUser = createAction("setUser");
 export const deleteUser = createAction("deleteUser");
 export const updateUser = createAction("updateUser");
+export const filterUserAction = createAction("filterUserAction");

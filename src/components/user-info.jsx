@@ -1,7 +1,6 @@
 import React from 'react';
-import { withRouter,Link } from 'react-router-dom';
-import { selectUserById } from '../selectors';
-import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import '../styles/user-card.css'
 
 const Info = ({ selectUser,deleteUser,history }) => {
 const { id,firstName,lastName,age,progress,status,visits } = selectUser;
@@ -14,16 +13,17 @@ const deleteHandler = e => {
   return (
     <div>
         <div className="user-card">
-          <div className="user-id">{id}</div>
-          <div className="user-firstname">{firstName}</div>
-          <div className="user-lastname">{lastName}</div>
-          <div className="user-age">{age}</div>
-          <div className="user-visits">{visits}</div>
-          <div className="user-progress">{progress}</div>
-          <div className="user-status">{status}</div>
+          <div className="user-id">id: {id}</div>
+          <div className="user-firstname">firstName: {firstName}</div>
+          <div className="user-lastname">lastName: {lastName}</div>
+          <div className="user-age">age: {age}</div>
+          <div className="user-visits">visits: {visits}</div>
+          <div className="user-progress">progress: {progress}</div>
+          <div className="user-status">status: {status}</div>
+          <Link to="/users">GO BACK</Link>
+          <span className="delete-btn" onClick={deleteHandler}>DEL</span>
         </div>
-        <Link to="/users">GO BACK</Link>
-        <span className="delete-btn" onClick={deleteHandler}>DEL</span>
+
     </div>
   )
 }

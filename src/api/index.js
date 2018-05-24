@@ -17,3 +17,4 @@ export const updateUser = user => api.put(`users/${user.id}`, {
         'Content-Type': 'application/json'
     },
 })
+export const filterUsers = ( filter,value ) => api.get(`users?${filter}=${value}`);

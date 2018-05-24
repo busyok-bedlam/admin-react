@@ -20,6 +20,7 @@ const reducer = handleActions({
   [actions.updateUser]: (state,{ payload: updatedUser }) => ({...state,
     users: state.users.map(user => user.id === updatedUser.id ? updatedUser : user)
   })
+
 }, initialState)
 
 export default reducer;
