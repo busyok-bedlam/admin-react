@@ -1,7 +1,7 @@
 import ApiCreator from './api';
 
 const api = ApiCreator('localhost:3001');
-export const getUsers = (url = null) => api.get(`users${url}`);
+export const getUsers = () => api.get(`users`);
 export const postUser = user => api.post('users', {
   body: JSON.stringify(user),
   headers: {

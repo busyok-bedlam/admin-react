@@ -12,6 +12,7 @@ class Table extends Component {
     }
     render(){
         const users = this.props.users;
+        debugger
         const formStatus = this.props.formStatus;
         const list = users && users.map( user => <TableItem data={user} key={user.id} />)
         return (

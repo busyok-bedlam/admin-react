@@ -14,9 +14,7 @@ return (
           <i className="fas fa-home"></i>
       </Link>
       <div className="users-btn" onClick={ toGo } >Users </div>
-      <div className="search">Search
-        <Search />
-      </div>
+      <Search />
     </div>
   )
 }
