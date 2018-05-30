@@ -8,7 +8,7 @@ const TableWrap = () =>{
     <div className="table-wrap" >
       <Switch>
         <Route path="/users" exact component={UsersTable} />
-        <Route path="/users/:id" exact  component={UserInfo} />
+        <Route path="/users/:id"  component={UserInfo} />
       </Switch>
     </div>
   )

@@ -14,7 +14,7 @@ const Search = ({ filterUsers }) => {
 
   return (
     <form className="search-form" onSubmit={ submitHandle } >
-      <label for="field-inp">Search</label>
+      <label htmlFor="field-inp">Search</label>
       <select
         className="select-filter"
         ref={node => select = node }
