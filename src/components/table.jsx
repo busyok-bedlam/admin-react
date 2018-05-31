@@ -8,6 +8,7 @@ class Table extends Component {
     componentDidMount(){
         this.props.getUsers()
     }
+
     render(){
         const users = this.props.users;
         const formStatus = this.props.formStatus;

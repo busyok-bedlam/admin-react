@@ -1,5 +1,5 @@
 import Info from '../components/user-info';
-import { withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { selectUserById } from '../selectors';
 import { connect } from 'react-redux';
 import { deleteUser } from '../actions/users';

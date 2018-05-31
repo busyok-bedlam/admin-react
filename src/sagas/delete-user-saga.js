@@ -10,8 +10,8 @@ export default function * delUserSaga(){
 function * delUserWatcher(){
   yield takeEvery(deleteUserAction,delUserWorker);
 }
-function * delUserWorker({payload: id}){
+function * delUserWorker({ payload: id }){
+  yield delay(2000)
   yield call(deleteUser(id));
-  yield call(delay(2000));
   yield put(deleteUserAction(id));
 }

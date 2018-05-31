@@ -6,10 +6,8 @@ import UserInfo from '../containers/user-info-cont';
 const TableWrap = () =>{
   return (
     <div className="table-wrap" >
-      <Switch>
         <Route path="/users" exact component={UsersTable} />
-        <Route path="/users/:id"  component={UserInfo} />
-      </Switch>
+        <Route path="/users/:id" component={UserInfo} />
     </div>
   )
 }

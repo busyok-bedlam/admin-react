@@ -8,7 +8,7 @@ const Info = ({ selectUser,deleteUser,history }) => {
     e.preventDefault();
     history.goBack();
     deleteUser(id);
-    console.log("DELETING USER .....")
+
   }
     return (
       <div>
